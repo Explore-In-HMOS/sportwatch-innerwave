@@ -1,0 +1,39 @@
+<stack class="container" onswipe="onSwipe">
+    <progress class="step-counter-progress" type="arc" percent="{{ ((currentExerciseIndex + 1) / moveCount) * 100 }}"/>
+    <div class="wrapper">
+        <text class="text-xs mt-24">{{ currentExerciseIndex + 1 }} / {{ moveCount }}</text>
+        <text class="text-sm text-color-red-700">{{ trainingHeader }}</text>
+        <text class="text-md text-color-red-500">{{ moveName }}</text>
+        <div style="width: 70%; height: 80px;">
+            <div class="row">
+                <image class="list-img" src="../../images/bolt-white.png"></image>
+                <div class="col">
+                    <text class="text-xs">Difficulty</text>
+                    <text class="text-xs" style="color: #fff;">{{ difficulty }}</text>
+                </div>
+            </div>
+            <div class="row">
+                <image class="list-img" src="../../images/clock.png"></image>
+                <div class="col">
+                    <text class="text-xs">Total Time</text>
+                    <text class="text-xs" style="color: #ffffff;">{{ totalTimer }}</text>
+                </div>
+            </div>
+        </div>
+
+        <div class="training-time">
+            <text class="text-xlg" id="timer">{{ timer }}</text>
+        </div>
+
+        <div class="row mt-24">
+            <image class="list-img mr-24" src="../../images/left.png" onclick="prevExercise"></image>
+
+            <div class="play-pause-img-container" onclick="togglePlay">
+                <image if="{{ !isPlaying }}" class="play-pause-img" src="../../images/play.png"></image>
+                <image if="{{ isPlaying }}" class="play-pause-img" src="../../images/pause.png"></image>
+            </div>
+
+            <image class="list-img" src="../../images/right.png" onclick="nextExercise"></image>
+        </div>
+    </div>
+</stack>

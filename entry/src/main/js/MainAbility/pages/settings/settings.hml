@@ -1,0 +1,12 @@
+<div class="container" onswipe="onSwipe">
+    <text class="text-title">Settings</text>
+    <div class="box" style="margin-bottom: 30;" onclick="toggleSwitch">
+        <text class="label">{{ title }}</text>
+        <switch checked="{{ vibrationEnabled }}" @change="switchChange"></switch>
+    </div>
+
+    <div class="box">
+        <text class="text-brightness">Brightness</text>
+        <slider class="slider" min="30" max="100" value="{{ brightness }}" onchange="setValue"/>
+    </div>
+</div>

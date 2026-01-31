@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "training_name": "Morning Flow",
+      "total_duration": "270",
+      "src": "/images/bolt-white.png",
+      "exercises": [
+        { "name": "Mountain Pose", "duration": "45" },
+        { "name": "Warrior I", "duration": "60" },
+        { "name": "Downward Dog", "duration": "30" },
+        { "name": "Tree Pose", "duration": "45" },
+        { "name": "Child's Pose", "duration": "60" },
+        { "name": "Cobra Pose", "duration": "30" }
+      ]
+    },
+    {
+      "training_name": "Core Power",
+      "total_duration": "315",
+      "src": "/images/bolt-white.png",
+      "exercises": [
+        { "name": "Triangle Pose", "duration": "60" },
+        { "name": "Plank Pose", "duration": "30" },
+        { "name": "Bridge Pose", "duration": "45" },
+        { "name": "Cat-Cow", "duration": "60" },
+        { "name": "Warrior II", "duration": "45" },
+        { "name": "Chair Pose", "duration": "30" },
+        { "name": "Boat Pose", "duration": "45" }
+      ]
+    },
+    {
+      "training_name": "Zen Focus",
+      "total_duration": "375",
+      "src": "/images/bolt-white.png",
+      "exercises": [
+        { "name": "Pigeon Pose", "duration": "45" },
+        { "name": "Butterfly", "duration": "60" },
+        { "name": "Mountain Pose", "duration": "30" },
+        { "name": "Downward Dog", "duration": "45" },
+        { "name": "Warrior I", "duration": "60" },
+        { "name": "Cobra Pose", "duration": "30" },
+        { "name": "Plank Pose", "duration": "45" },
+        { "name": "Child's Pose", "duration": "60" }
+      ]
+    },
+    {
+      "training_name": "Daily Balance",
+      "total_duration": "270",
+      "src": "/images/bolt-white.png",
+      "exercises": [
+        { "name": "Warrior II", "duration": "30" },
+        { "name": "Tree Pose", "duration": "45" },
+        { "name": "Triangle Pose", "duration": "60" },
+        { "name": "Bridge Pose", "duration": "30" },
+        { "name": "Chair Pose", "duration": "45" },
+        { "name": "Cat-Cow", "duration": "60" }
+      ]
+    }
+  ]
+}

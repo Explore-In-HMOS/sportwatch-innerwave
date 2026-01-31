@@ -1,0 +1,116 @@
+<stack class="container" onswipe="onSwipe">
+    <swiper class="page-container" index="{{ currentIndex }}" onchange="change" indicator="true" autoplay="false"
+            loop="false"
+            indicatormask="true">
+        <div class="list-container">
+            <text class="time-text">{{ systemTime.time }}</text>
+            <text class="pageTitle">Menu</text>
+            <list class="list-wrapper">
+                <list-item for="{{ menuList }}" class="list-item" onclick="clickMenuItem({{ $item }})">
+                    <div class="list-img-container">
+                        <image class="list-img" src="{{ $item.src }}"></image>
+                    </div>
+                    <text class="list-title">{{ $item.name }}</text>
+                </list-item>
+            </list>
+        </div>
+        <div class="list-container">
+            <swiper scrolleffect="fade" vertical="true" class="page-container" onchange="changeTracking"
+                    indicator="true"
+                    autoplay="false" loop="false" indicatormask="true">
+                <stack class="swiper-item">
+                    <progress class="step-counter-progress" type="arc" percent="80"/>
+                    <progress class="kcal-counter-progress" type="arc" percent="60"/>
+                    <div class="progress-container">
+                        <div class="center-box">
+                            <image class="center-image" src="/images/bolt.png"/>
+                            <text class="center-text">{{ $t('strings.appName') }}</text>
+                        </div>
+                        <div class="system-time">
+                            <text class="text-xlg">{{ systemTime.time }}</text>
+                            <text class="text-md text-color-gray">{{ systemTime.ampm }}</text>
+                        </div>
+                        <div class="health-info-container">
+                            <div class="health-info-item">
+                                <image class="health-info-image" src="/images/sun_light.png"/>
+                                <text class="text-md mb-4">{{ cal }}</text>
+                                <text class="text-md text-color-gray">kcal</text>
+                            </div>
+                            <div class="health-info-item">
+                                <image class="health-info-image" src="/images/route.png"/>
+                                <text class="text-md overflow mb-4">{{ steps }}</text>
+                                <text class="text-md text-color-gray">km</text>
+                            </div>
+                            <div class="health-info-item">
+                                <image class="health-info-image" src="/images/heart.png"/>
+                                <text class="text-md overflow mb-4">{{ heart }}</text>
+                                <text class="text-md text-color-gray">bpm</text>
+                            </div>
+                        </div>
+                    </div>
+                </stack>
+                <stack class="swiper-item">
+                    <progress class="step-counter-progress" type="arc" percent="80"/>
+                    <div class="progress-container">
+                        <div class="center-box h-100">
+                            <image class="image-md" src="/images/calender_blue.png"/>
+                            <text class="center-text">{{ $t('strings.daily') }}</text>
+                        </div>
+                        <div class="system-time">
+                            <text class="text-xlg">{{ trackingData.daily.steps }}</text>
+                            <text class="text-md text-color-gray">{{ $t('strings.steps') }}</text>
+                        </div>
+                        <div class="training-info-container">
+                            <div class="training-info-item">
+                                <text class="text-md text-center mb-4">Target: {{ trackingData.daily.target }}</text>
+                                <text class="text-md text-center text-color-gray">kcal : {{ cal }}</text>
+                            </div>
+                        </div>
+                    </div>
+                </stack>
+                <stack class="swiper-item">
+                    <progress class="kcal-counter-progress" style="padding: 0;" type="arc" percent="80"/>
+                    <div class="progress-container">
+                        <div class="center-box h-100">
+                            <image class="image-md"
+                                   src="/images/calender_green.png"/>
+                            <text class="center-text">{{ $t('strings.weekly') }}</text>
+                        </div>
+                        <div class="system-time">
+                            <text class="text-xlg">{{ trackingData.weakly.steps }}</text>
+                            <text class="text-md text-color-gray">{{ $t('strings.steps') }}</text>
+                        </div>
+                        <div class="training-info-container">
+                            <div class="training-info-item">
+                                <text class="text-md text-center mb-4">Target: {{ trackingData.weakly.target }}</text>
+                                <text class="text-md text-center text-color-gray">kcal</text>
+                            </div>
+                        </div>
+                    </div>
+                </stack>
+            </swiper>
+        </div>
+        <div class="list-container">
+            <text class="time-text">{{ systemTime.time }}</text>
+            <text class="pageTitle">Trainings</text>
+            <list class="list-wrapper">
+                <list-item for="{{ trainingList.data }}" class="list-item" onclick="click({{ $item }})">
+                    <div class="list-img-container bg-icon">
+                        <image class="list-img" src="{{ $item.src }}"></image>
+                    </div>
+                    <text class="list-title">{{ $item.training_name }}</text>
+                </list-item>
+            </list>
+        </div>
+    </swiper>
+    <div class="indicator-container">
+        <div class="indicator-dot" for="{{ pages }}"
+             style="background-color: {{ dotIndex === $idx ? '#F7F7F7' : '#D3D3D3' }};
+                     width: {{ dotIndex === $idx ? '20px' : '10px' }};"></div>
+    </div>
+    <div class="indicator-container-vertical" if="{{ dotIndex === 1 }}">
+        <div class="indicator-dot-vertical" for="{{ tracking }}"
+             style="background-color: {{ trackingDotIndex === $idx ? '#F7F7F7' : '#D3D3D3' }};
+                     height: {{ trackingDotIndex === $idx ? '20px' : '10px' }};"></div>
+    </div>
+</stack>

@@ -1,0 +1,139 @@
+@import '../../common/css/common.css';
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.training-header {
+    width: 100%;
+    text-align: center;
+    color: #D0001E;
+    font-size: 26px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+}
+
+.btn {
+    width: 140px;
+    height: 60px;
+    background-color: #ff4a4a4a;
+    font-size: 24px;
+}
+
+.training-img-container {
+    width: 50%;
+    height: 120px;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-counter-progress {
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    color: #FC2606;
+    stroke-width: 15px;
+    start-angle: 0deg;
+    total-angle: 360deg;
+}
+
+.wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.text-color-gray {
+    color: #8C8C8C;
+}
+
+.text-color-red-700 {
+    color: #D0001E;
+}
+
+.text-color-red-500 {
+    color: #8C8C8C;
+}
+
+.mr-24 {
+    margin-right: 24;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.row {
+    width: 56%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.col {
+    width: 72%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 12px;
+    align-items: flex-start;
+}
+
+.text-xs {
+    text-align: center;
+    color: #D3D3D3;
+    font-size: 18px;
+}
+
+
+.text-sm {
+    text-align: center;
+    color: #D3D3D3;
+    font-size: 28px;
+}
+
+.list-img {
+    width: 36px;
+    height: 36px;
+    text-align: right;
+}
+
+
+.training-time {
+    width: 50%;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.play-pause-img {
+    width: 40px;
+    height: 40px;
+}
+
+.play-pause-img-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #FC2606;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
