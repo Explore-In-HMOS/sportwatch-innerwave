@@ -3,7 +3,7 @@
     {
       "training_name": "Morning Flow",
       "total_duration": "270",
-      "src": "/images/bolt-white.png",
+      "src": "/images/morning_yoga.png",
       "exercises": [
         { "name": "Mountain Pose", "duration": "45" },
         { "name": "Warrior I", "duration": "60" },
@@ -16,7 +16,7 @@
     {
       "training_name": "Core Power",
       "total_duration": "315",
-      "src": "/images/bolt-white.png",
+      "src": "/images/full_body.png",
       "exercises": [
         { "name": "Triangle Pose", "duration": "60" },
         { "name": "Plank Pose", "duration": "30" },
@@ -30,7 +30,7 @@
     {
       "training_name": "Zen Focus",
       "total_duration": "375",
-      "src": "/images/bolt-white.png",
+      "src": "/images/stretching.png",
       "exercises": [
         { "name": "Pigeon Pose", "duration": "45" },
         { "name": "Butterfly", "duration": "60" },
@@ -45,7 +45,7 @@
     {
       "training_name": "Daily Balance",
       "total_duration": "270",
-      "src": "/images/bolt-white.png",
+      "src": "/images/mobility.png",
       "exercises": [
         { "name": "Warrior II", "duration": "30" },
         { "name": "Tree Pose", "duration": "45" },

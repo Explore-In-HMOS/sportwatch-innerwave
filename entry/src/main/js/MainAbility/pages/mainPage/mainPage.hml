@@ -23,7 +23,7 @@
                     <progress class="kcal-counter-progress" type="arc" percent="60"/>
                     <div class="progress-container">
                         <div class="center-box">
-                            <image class="center-image" src="/images/bolt.png"/>
+                            <image class="center-image" src="/images/graph.png"/>
                             <text class="center-text">{{ $t('strings.appName') }}</text>
                         </div>
                         <div class="system-time">
@@ -32,7 +32,7 @@
                         </div>
                         <div class="health-info-container">
                             <div class="health-info-item">
-                                <image class="health-info-image" src="/images/sun_light.png"/>
+                                <image class="health-info-image" src="/images/fire.png"/>
                                 <text class="text-md mb-4">{{ cal }}</text>
                                 <text class="text-md text-color-gray">kcal</text>
                             </div>
