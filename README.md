@@ -2,7 +2,7 @@
 
 # Sport Watch - InnerWave
 
-**Sport Watch – InnerWave** is a HarmonyOS lite wearable sample application for Huawei sport watches that allows users
+**Sport Watch – InnerWave** is a HarmonyOS SportWatch sample application for Huawei sport watches that allows users
 to track real time health metrics, manage training sessions, and customize activity goals through a simple swiper based
 interface.
 
